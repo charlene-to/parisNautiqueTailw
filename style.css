@@ -86,7 +86,7 @@ nav a:hover::before {
   text-align: center;
   padding-top: 150px;
   position: relative;
-  background: url(ressources/hero-background.jpg);
+  background: url(ressources/hero-background-paris-2.jpg) no-repeat;
   background-position: center;
 }
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Florilège d'animations</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Tailwind Paris Nautique</title>
+    <link rel="stylesheet" href="src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,15 +17,15 @@
     <div class="custom-cursor"></div>
 
     <nav>
-        <a href="#">Home<a>
-      <a href="#">Services</a>
-      <a href="#">Features</a>
+        <a href="#">Accueil<a>
+      <a href="#">3 espaces</a>
+      <a href="#">infos pratiques</a>
     </nav>
 
     <section class="hero">
       <div class="hero-content">
-        <h1 aria-label="Porsche, set free."></h1>
-        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+        <h1 aria-label="Paris, la Seine."></h1>
+        <p class="subtitle">Une baignade inoubliable</p>
       </div>
       <a href="#discover" class="hero-push-link">
         <img src="ressources/down-arrow.svg" alt="arrow down" />
@@ -34,26 +34,25 @@
 
     <main class="container">
       <section id="discover" class="discover-section">
-        <h2>Feel the <span>road</span></h2>
-        <p class="section-subtitle discover-subtitle">Start today</p>
+        <h2>Au coeur de <span>Paris</span></h2>
+        <p class="section-subtitle discover-subtitle">Ouvert pour l'été</p>
 
+        <!--présentation -->
         <div class="discover-content">
           <div class="text-discover-content">
-            <h3>You've never experienced that.</h3>
+            <h3>3 espaces protégés</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-              hic! Distinctio quisquam ullam recusandae suscipit itaque
-              assumenda numquam facilis, quod voluptas ratione repellendus esse
-              ipsum nostrum fuga vel at. Ducimus reiciendis modi nihil hic velit
-              dolorum nulla recusandae iste vero!
+            Une reconquête du fleuve et de la qualité de son eau.
+            Trois sites de baignade naturelle seront aménagés pour permettre à toutes les personnes qui le souhaitent 
+             d’y nager ou de s’y prélasser, gratuitement et tous les jours. 
             </p>
             <a href="#contact" class="discover-link">
-              <span>Contact Us</span>
+              <span>infos pratiques</span>
               <img src="ressources/right-chevron.svg" alt="right chevron" />
             </a>
           </div>
           <img
-            src="ressources/vertical-porsche.jpg"
+            src="ressources/hero-background-paris.jpg"
             alt="porsche car"
             class="discover-main-img"
           />
@@ -61,41 +60,44 @@
       </section>
 
       <section class="side-apparition">
-        <h2>Browse the models.</h2>
-        <p class="section-subtitle">Pick your favorite.</p>
+        <h2>Les bords de Seine</h2>
+        <p class="section-subtitle">Espace adapté</p>
 
+         <!--marie -->
         <div class="side-apparition-container">
           <div class="side-slide-content">
-            <h3>Cayman.</h3>
+            <h3>Bras Marie</h3>
+            <p>
+              une baignade face à l’île Saint-Louis et Notre-Dame, au cœur de Paris.
+            </p>
+          </div>
+          <img src="ressources/bras-marie.jpg" alt="bras marie" />
+        </div>
+        
+        <!--grenelle -->
+        <div class="side-apparition-container">
+          <img src="ressources/vue-grenelle.jpg" alt="grenell" />
+          <div class="side-slide-content">
+            <h3>Grenelle</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
               distinctio, dolorem maxime iure earum ducimus?
             </p>
           </div>
-          <img src="ressources/side-1.jpg" alt="porsche car" />
         </div>
-
+        
+        <!--Bercy -->
         <div class="side-apparition-container">
-          <img src="ressources/side-2.jpg" alt="porsche car" />
           <div class="side-slide-content">
-            <h3>Panamera.</h3>
+            <h3>Bercy</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
               distinctio, dolorem maxime iure earum ducimus?
             </p>
           </div>
+          <img src="ressources/vue-bercy.jpg" alt="bercy" />
         </div>
-
-        <div class="side-apparition-container">
-          <div class="side-slide-content">
-            <h3>The 911.</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-              distinctio, dolorem maxime iure earum ducimus?
-            </p>
-          </div>
-          <img src="ressources/side-3.jpg" alt="porsche car" />
-        </div>
+       
       </section>
     </main>
 

@@ -9,7 +9,7 @@ function handleCustomCursor(e) {
 const title = document.querySelector("h1");
 const subtitle = document.querySelector(".subtitle");
 const heroPushLink = document.querySelector(".hero-push-link");
-const txt = "Porsche, set free.";
+const txt = "Paris, La Seine";
 
 function typewriter(text, index) {
   if (index > 3) subtitle.classList.add("active");
