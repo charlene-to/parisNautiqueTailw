@@ -1,0 +1,31 @@
+{
+  "name": "parisnautiquetailw",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind-init": "tailwindcss init -p",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlene-to/parisNautiqueTailw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlene-to/parisNautiqueTailw/issues"
+  },
+  "homepage": "https://github.com/charlene-to/parisNautiqueTailw#readme",
+  "devDependencies": {
+    "@storybook/addon-docs": "^9.1.7",
+    "@storybook/html-vite": "^9.1.7",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "storybook": "^9.1.7",
+    "tailwindcss": "^4.1.13"
+  },
+  "description": ""
+}

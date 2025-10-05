@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+/* Typo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+@theme {
+      --color-$ ; 
+
+    /* Définition des utilitaires d'animation */
+    --animate-fadeOut: fadeOut 10s linear forwards;
+
+    /* Définition des keyframes (syntaxe CSS standard) */
+    
+    @keyframes fadeOut {
+        0%, 70% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+}
+
+    /* Déclaration des composants personnalisés (@layer components) */
+    /* https://www.magicpattern.design/tools/css-backgrounds*/
+    @layer components {
+        
+         .motif-eau {
+           background-color: #f3ffff;
+            opacity: 0.5;
+            background-image: radial-gradient(circle at center center, #e5f3f2, #f3ffff), repeating-radial-gradient(circle at center center, #e5f3f2, #e5f3f2, 13px, transparent 26px, transparent 13px);
+            background-blend-mode: multiply;
+}
+        .motif-point {
+            background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px, transparent 10px, transparent 11px), 
+                            repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px, transparent 10px, transparent 11px), 
+                            linear-gradient(90deg, hsl(256,7%,84%), hsl(256,7%,84%));
+        }
+
+        
+    }

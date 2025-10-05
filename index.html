@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tailwind Paris Nautique</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="custom-cursor"></div>
-
-    <nav>
-        <a href="#">Accueil<a>
-      <a href="#">3 espaces</a>
-      <a href="#">infos pratiques</a>
-    </nav>
-
-    <section class="hero">
-      <div class="hero-content">
-        <h1 aria-label="Paris, la Seine."></h1>
-        <p class="subtitle">Une baignade inoubliable</p>
-      </div>
-      <a href="#discover" class="hero-push-link">
-        <img src="ressources/down-arrow.svg" alt="arrow down" />
-      </a>
+</head>
+<body>
+    <section id="hero" class="h-screen relative flex flex-col bg-[url('../ressources/hero-background-paris-2.jpg')] 
+    bg-cover">
+      <!-- 
+      bg-fixed (attachement) : Dit à l'image de ne pas défiler avec le contenu.
+      bg-top (position) : Dit à l'image où commencer à s'afficher dans la zone de la balise.
+      -->
+      <header><nav class="">
+                <a href="#" class="inline-block p-5">Accueil</a>
+                <a href="#">3 espaces</a>
+                <a href="#">infos pratiques</a>
+            </nav>
+        </header>
+      
+      
+        <div class="  text-white ">
+            <!------------ aria label pour la lecture écran ------------>
+            <h1 aria-label="Paris, la Seine." class="text-6xl font-bold hero-push-link"></h1>
+            <p class="subtitle text-xl mt-4">Une baignade inoubliable</p>
+        </div>
+        <a href="#discover" class="absolute left-1/2 transform -translate-x-1/2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-gray-200">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </a>
     </section>
+    <main class="w-full">
 
-    <main class="container">
-      <section id="discover" class="discover-section">
-        <h2>Au coeur de <span>Paris</span></h2>
-        <p class="section-subtitle discover-subtitle">Ouvert pour l'été</p>
+      <!------------ 1ère section ------------>
+        <section id="services" class="relative">
+            <div class="">
+                <h2 class="">
+                    <span class="text-brand">Lorem Ipsum</span>
+                </h2>
+                <p class="m">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Necessitatibus, et!
+                </p>
+                <a href="#" class=" ">
+                    Voir les horaires
+                </a>
+            </div>
+            <div class="">
+                <img src="ressources/bras-marie.jpg" alt="Bras Marie" class="absolute z-50 w-full h-full object-cover object-center lg:w-1/2" />
+            </div>
+        </section>
 
-        <!--présentation -->
-        <div class="discover-content">
-          <div class="text-discover-content">
-            <h3>3 espaces protégés</h3>
-            <p>
-            Une reconquête du fleuve et de la qualité de son eau.
-            Trois sites de baignade naturelle seront aménagés pour permettre à toutes les personnes qui le souhaitent 
-             d’y nager ou de s’y prélasser, gratuitement et tous les jours. 
-            </p>
-            <a href="#contact" class="discover-link">
-              <span>infos pratiques</span>
-              <img src="ressources/right-chevron.svg" alt="right chevron" />
-            </a>
-          </div>
-          <img
-            src="ressources/hero-background-paris.jpg"
-            alt="porsche car"
-            class="discover-main-img"
-          />
-        </div>
+           <!------------ Titre et Les 3 espaces ------------>
+      <section id="discover" class="  text-gray-600 py-15">
+          <h3 class="font-extrabold text-brand text-3xl">Au coeur de <span>Paris</span></h3>
+          <p class="text-center mt-5 text-xl">Ouvert pour l'été</p>
+            <hr class="mt-5 mx-auto w-1/4" />
       </section>
-
-      <section class="side-apparition">
-        <h2>Les bords de Seine</h2>
-        <p class="section-subtitle">Espace adapté</p>
-
-         <!--marie -->
-        <div class="side-apparition-container">
-          <div class="side-slide-content">
-            <h3>Bras Marie</h3>
-            <p>
-              une baignade face à l’île Saint-Louis et Notre-Dame, au cœur de Paris.
-            </p>
-          </div>
-          <img src="ressources/bras-marie.jpg" alt="bras marie" />
-        </div>
-        
-        <!--grenelle -->
-        <div class="side-apparition-container">
-          <img src="ressources/vue-grenelle.jpg" alt="grenell" />
-          <div class="side-slide-content">
-            <h3>Grenelle</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-              distinctio, dolorem maxime iure earum ducimus?
-            </p>
-          </div>
-        </div>
-        
-        <!--Bercy -->
-        <div class="side-apparition-container">
-          <div class="side-slide-content">
-            <h3>Bercy</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-              distinctio, dolorem maxime iure earum ducimus?
-            </p>
-          </div>
-          <img src="ressources/vue-bercy.jpg" alt="bercy" />
-        </div>
+        <!------------  Grenelle ------------>
+        <section id="espaces" class="container  motif-point border-gray-300 shadow-2xl">
+            <div class="px-10 pb-16 pt-10 order-1 text-center  lg:order-1">
+                <h4 class="font-extrabold text-gray-200 text-2xl">
+                    <span class="text-brand">La Vue Grenelle</span>
+                </h4>
+                <p class="mt-3 text-lg mx-auto text-cyan-800 sm:text-xl md:mt-5 md:max-w-md">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Necessitatibus, et!
+                </p>
+                <a href="#" class="  text-white  bg-brand w-full hover:bg-hover-brand">
+                    La vue Grenelle
+                </a>
+            </div>">
+                <img src="../ressources/vue-grenelle.jpg" alt="Vue grenelle" class="" />
+            </div>
+        </section>
        
-      </section>
-    </main>
+        <!------------  Bercy ------------>
+        <section id="bercy" class=" ">
+           
+        </section>
 
+         <!------------  Bras Marie ------------>
+         <section id="Marie" class=" ">
+           
+        </section>
+
+        <!------------ Separation bleue ------------>
+        <section class="">
+            
+        </section>
+
+     
+    </main>
+    <!------------ Footer------------>
+    <footer class="py-5 motif-eau text-cyan-800">
+        <h3 class="text-3xl pb-5 text-center">
+            Retrouvez-nous sur place
+        </h3>
+        <hr class="w-36 mx-auto mb-5">
+        <p class="text-center mt-8 text-base text-cyan-800 md:mt-0">
+            &copy; Mairie de Paris
+        </p>
+    </footer>
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
